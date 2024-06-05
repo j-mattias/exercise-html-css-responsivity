@@ -1,0 +1,72 @@
+:root {
+    --bg-col: rgb(41, 41, 41);
+    --header-col: rgb(20, 58, 184);
+    --main-col: rgb(0, 183, 255);
+    --secondary-col: rgb(29, 221, 132);
+    --footer-col: rgb(94, 190, 64);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-col);
+    width: 100vw;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header section {
+    background-color: var(--header-col);
+    width: 24%;
+}
+
+.main {
+    height: 80%;
+    margin-block: .5rem;
+    display: flex;
+    gap: .4rem;
+}
+
+.main section {
+    background-color: var(--main-col);
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--footer-col);
+    height: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 15%;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .header section {
+        width: 49%;
+    }
+
+    .main {
+        height: 70%;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header section {
+        width: 48%;
+    }
+}
