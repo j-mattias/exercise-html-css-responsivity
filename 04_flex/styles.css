@@ -79,7 +79,8 @@ body {
     }
 
     .content {
-        width: calc(100% / 2 - 10px);
+        /* width: calc(100% / 2 - 10px); */
+        flex: 1 0 40%;
         height: 35%;
         background-color: var(--secondary-col);
     }
@@ -87,6 +88,7 @@ body {
     .content:nth-child(1),
     .content:nth-child(4) {
         background-color: var(--main-col);
+        /* order: 1; */
     }
 
     .small {
@@ -94,5 +96,6 @@ body {
         border-radius: 1.4rem;
         margin-top: 2rem;
         margin-inline: auto;
+        /* order: 2; */
     }
 }
